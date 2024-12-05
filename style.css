@@ -1,0 +1,75 @@
+.button-with-image {
+    border: 2px solid #ffffff; /* Stroke dengan warna putih */
+    border-radius: 10px; /* Membuat sudut tombol melengkung */
+    padding: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 0 black;
+}
+
+.button-with-image:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+}
+
+.button-with-image:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+}
+
+.tombol-keluar-dari-kotak {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.wadah-kotak {
+    position: relative;
+}
+
+.muncul {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    /*opacity: 0;*/
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.muncul.show {
+    display: block;
+    animation: popUpAnimation 0.2s ease forwards;
+}
+/*.muncul.visible {
+    visibility: visible;
+    opacity: 1;
+}*/
+
+/*.popUp-content {
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}*/
+
+/*.muncul.visible .popUp-content {
+    transform: scale(1);
+}*/
+
+.hidden {
+    display: none;
+}
+
+/*ANIMASI MUNCUL*/
+@keyframes popUpAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(0.1);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%,-50%) scale(1);
+        opacity: 1;
+    }
+} 

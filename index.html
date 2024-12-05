@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TUGAS UI/UX</title>
+</head>
+<body class="bg-white">
+    <div class="flex flex-col items-center p-4">
+        
+        <div>
+            <!--IMAGE-->
+            <img src="Group 40.png"
+            width="full" height="full">
+
+            <!--NAVIGATION-->
+            <nav class="bg-white shadow-[0_4px_10px_rgba(0,0,0,0.70)] mt-4 h-10 w-full max-w-screen-md border-2 border-gray-950 rounded-xl flex justify-center items-center">
+                <ul class="flex justify-around py-3 space-x-0.5">
+                    <li><a href="#" class="text-black hover:text-blue-500 block w-20 h-19 text-center flex items-center justify-center rounded-md hover:shadow-lg hover:shadow-slate-500 transition-all duration-300">HOME</a></li>
+                    <li><a href="#" class="text-black hover:text-blue-500 block w-20 h-19 text-center flex items-center justify-center rounded-md hover:shadow-lg hover:shadow-slate-500 transition-all duration-300">ABOUT</a></li>
+                    <li><a href="#" class="text-black hover:text-blue-500 block w-20 h-19 text-center flex items-center justify-center rounded-md hover:shadow-lg hover:shadow-slate-500 transition-all duration-300">PRODUCT</a></li>
+
+                    <!--TOMBOL IKON GARIS TIGA-->
+                    <li>
+                        <button class="text-black hover:text-blue-500 block w-20 h-[25px] flex items-center justify-center rounded-md hover:shadow-lg hover:shadow-slate-500 transition-all duration-300">
+                            <div class="space-y-1">
+                                <div class="w-6 h-0.5 bg-black"></div>
+                                <div class="w-6 h-0.5 bg-black"></div>
+                                <div class="w-6 h-0.5 bg-black"></div>
+                            </div>
+                        </button>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--DETAILED PRODUCT AND BELI PAKET-->
+        <div class="bg-cyan-300 mt-8 h-[515px] w-full relative">
+            
+            <!--DETAILED PRODUCT-->
+            <div class="w-[150px] h-[430px] bg-white absolute top-8 left-5 rounded-[20px] flex flex-col justify-center items-center z-10">
+                <!--KUOTA-->
+                <div class="absolute top-[1px]">
+                    <div class="w-[120px] h-10 bg-cyan-300 text-white flex items-center justify-center text-3xl font-bold mt-5 rounded-xl font-[Hind] shadow-[inset_-2px_5px_10px_rgba(0,0,0,0.50)] [text-shadow:_3px_0px_3px_rgba(0,0,0,0.70)]">
+                        KUOTA
+                    </div>
+                </div>
+                <!--PENGGESER-->
+                <div class="w-[120px] h-80 flex justify-center mt-10 bg-cyan-300 rounded-xl">
+                    <div class="slider1">
+                        <ul>
+                            <li>
+                                <img src="paket-data-internet-murah-removebg 6.png">
+                            </li>
+                            <li>
+                                <div class="px-1.5">
+                                    <button class="button-with-image">
+                                        <img src="Group 42.png">
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="px-1.5 mt-2">
+                                    <button class="button-with-image">
+                                        <img src="Group 42.png">
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="px-1.5 mt-2">
+                                    <button class="button-with-image">
+                                        <img src="Group 42.png">
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="px-1.5 mt-2">
+                                    <button class="button-with-image">
+                                        <img src="Group 42.png">
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="px-1.5 mt-2">
+                                    <button class="button-with-image">
+                                        <img src="Group 42.png">
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="simpati.png" class="w-full h-[70px] object-contain">
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--TOMBOL PESAN-->
+            <div class=" top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute z-20">
+                <div id="muncul" class="muncul hidden">
+                    <div id="nutup" class="popUp-content">
+                        <div class="w-60 aspect-square ml-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded border-8 border-white absolute z-20 backdrop-blur-md bg-transparent">
+                            <div class="wadah-kotak">
+                                <button id="tombol-keluar-dari-kotak-id" class="tombol-keluar-dari-kotak">X</button>
+                            </div>
+                            <div class="w-50 aspect-square flex justify-center items-center">
+                                <button id="button-pesan" class="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-white transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95">
+                                    <div class="absolute inset-0 bg-gradient-to-br from-sky-400 via-sky-300 to-neutral-50 rounded-full transition-all duration-300 group-hover:scale-110 animate-gradient">
+                
+                                    </div>
+                                    <div class="absolute inset-0 rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-300 bg-white blur-xl">
+                
+                                    </div>
+                                    <div class="absolute inset-0 overflow-hidden rounded-full">
+                                        <div class="glitter-container">
+                                            <div class="glitter"></div>
+                                            <div class="glitter"></div>
+                                            <div class="glitter"></div>
+                                        </div>
+                                    </div>
+                                    <div class="absolute inset-0 rounded-full border-2 border-white opacity-20 group-hover:opacity-40 group-hover:scale-105 transition-all duration-300">
+                
+                                    </div>
+                                    <div class="absolute inset-0 rounded-full overflow-hidden">
+                                        <div class="wave"></div>
+                                    </div>
+                
+                                    <span class="relative z-10 flex items-center gap-2">
+                                        <span class="tracking-wider">PESAN !!!</span>
+                                        
+                                        <span
+                                        class="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+                                        ></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
